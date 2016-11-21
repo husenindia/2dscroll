@@ -1,0 +1,201 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <style>
+        * { box-sizing: border-box; }
+        ul, li { margin: 0px; padding: 0px; }
+        li { list-style: none; }
+        .cal-inner { width: 300px; position: relative; }
+        p { position: absolute; left: 0px; background-color:#FFF; height:50px; width:50px; margin:0px; padding:0px;  }
+        .cal-inner { overflow: auto; }
+        .time-listing { width: 550px; padding-left: 50px; }
+            .time-listing li { float: left; width: 50px; height: 30px; line-height: 30px; }
+
+        .lic-platelisting > ul { position: relative; padding-left:50px; }
+        
+        .lic-platelisting ul ul li { height: 50px; width: 50px; border: 1px solid #CCC; float: left; }
+        .lic-platelisting { width: 550px; }
+
+            .time-listing:after,
+            .lic-platelisting ul ul:after { display: block; clear: both; content: ''; }
+
+
+
+        .lic-platelisting { height: 180px; overflow-y: auto; overflow-x: hidden; }
+    </style>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(
+            function ($) {
+                var lastLeftLocation = 0;
+                $('.cal-inner').scroll(
+                    function (e) {
+                        $('p').css({ 'left': $(this).scrollLeft() + 'px' })                        
+                    }
+                );
+            }
+        );
+    </script>
+</head>
+<body>
+    <div class="cal-inner">
+        <div class="time-listing">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+            </ul>
+        </div>
+        <div class="lic-platelisting">
+            <ul>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+                <li>
+                    <p><span>Lip 1</span></p>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
